@@ -1,6 +1,4 @@
 User-agent: *
 Allow: /
-Disallow: /search.html?q=
-Disallow: /register.html
 
 Sitemap: https://cheleyskiy.github.io/BarRouts/sitemap.xml
