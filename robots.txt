@@ -3,4 +3,4 @@ Allow: /
 Disallow: /search.html?q=
 Disallow: /register.html
 
-Sitemap: https://barrouts.by/sitemap.xml
+Sitemap: https://cheleyskiy.github.io/BarRouts/sitemap.xml
