@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BarRouts — Челей Максим</title>
+    
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon.png" type="image/png">
+    
+    <link rel="author" href="https://vk.com/cheleyskiy">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <nav>
+                <div class="mobile-menu-wrapper">
+                    <input id="menu__toggle" type="checkbox" />
+                    <label class="menu__btn" for="menu__toggle" title="Открыть мобильное меню">
+                        <span></span>
+                    </label>
+                    <label class="menu__overlay" for="menu__toggle"></label>
+                    
+                    <ul class="menu__box">
+                        <li><a class="menu__item" href="index.html">Главная</a></li>
+                        <li class="menu__has-submenu">
+                            <input id="menu__routes" type="checkbox" class="menu__submenu-toggle" />
+                            <label class="menu__item menu__item--parent" for="menu__routes">
+                                Маршруты <i class="fas fa-chevron-down"></i>
+                            </label>
+                            <ul class="menu__submenu">
+                                <li><a class="menu__subitem" href="route-historical.html" title="Исторический маршрут">Исторические</a></li>
+                                <li><a class="menu__subitem" href="route-gastro.html" title="Гастрономический маршрут">Гастрономические</a></li>
+                                <li><a class="menu__subitem" href="route-family.html" title="Семейный маршрут">Для семей с детьми</a></li>
+                            </ul>
+                        </li>
+                        <li><a class="menu__item" href="404.html">Конструктор</a></li>
+                        <li><a class="menu__item" href="sitemap.html">Карта сайта</a></li>
+                        <li><a class="menu__item" href="gallery.html">Галерея</a></li>
+                        <li><a class="menu__item" href="404.html">О городе</a></li>
+                        <li><a class="menu__item" href="developer.html">О разработчике</a></li>
+                    </ul>
+                </div>
+
+                <a href="index.html" class="logo" title="Вернуться на главную страницу">
+                    <img src="images/logo.png" alt="Логотип сайта Местные туры Барановичи">
+                </a>
+
+                <ul class="nav-links">
+                    <li><a href="index.html" title="Главная страница">Главная</a></li>
+                    <li class="has-submenu">
+                        <a href="404.html" title="Все маршруты">Маршруты <i class="fas fa-chevron-down"></i></a>
+                        <ul class="submenu">
+                            <li><a href="route-historical.html" title="Исторический маршрут">Исторические</a></li>
+                            <li><a href="route-gastro.html" title="Гастрономический маршрут">Гастрономические</a></li>
+                            <li><a href="route-family.html" title="Семейный маршрут">Для семей с детьми</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="404.html" title="Создать свой маршрут">Конструктор</a></li>
+                    <li><a href="404.html" title="О городе Барановичи">О городе</a></li>
+                    <li><a href="register.html" title="Вход в аккаунт">Войти</a></li>
+                </ul>
+
+                <div class="header-actions">
+                    <div class="header-search">
+                        <form action="search.html" method="GET">
+                            <input type="text" name="q" placeholder="Поиск..." title="Поиск маршрута">
+                            <button type="submit" title="Найти"><i class="fas fa-search"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Открой Барановичи заново</h1>
+                <p>Бесплатный цифровой путеводитель по скрытым дворам, историческим улочкам и знаковым местам города. Исследуйте в своём темпе, следуйте по интерактивной карте и собирайте отметки о посещении, как в настоящем квесте.</p>
+                <div class="hero-buttons">
+                    <a href="#how" class="btn btn-primary">Как это работает</a>
+                    <a href="404.html" class="btn btn-outline">Все маршруты</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="how" class="how-it-works">
+            <div class="container">
+                <h2 class="section-title">Как пользоваться путеводителем</h2>
+                <div class="steps-grid">
+                    <div class="step-card">
+                        <div class="step-icon"><i class="fas fa-mobile-alt"></i></div>
+                        <h3>1. Откройте карту</h3>
+                        <p>Сохраните ссылку на маршрут или скачайте GPX-трек в приложение на телефоне. Все описания и фото доступны даже без интернета.</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-icon"><i class="fas fa-route"></i></div>
+                        <h3>2. Следуйте по точкам</h3>
+                        <p>Идите по маршруту в своем темпе. На каждой точке вас ждет подробная история места, старые фотографии и интересные факты.</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-icon"><i class="fas fa-check-circle"></i></div>
+                        <h3>3. Собирайте отметки</h3>
+                        <p>Отмечайте посещенные точки и проходите маршруты как квест. Делитесь достижениями с друзьями и открывайте новые уголки города!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-idea">
+            <div class="container">
+                <h2 class="section-title">Идея и цели проекта</h2>
+                <div class="idea-content">
+                    <p>Сайт «Барановичи.Маршруты» создан местными жителями с огромной любовью к родному городу. Наша главная цель – не просто показать туристам парадный фасад, а раскрыть настоящую душу Барановичей: его скрытые дворики, исторические улочки и забытые страницы прошлого.</p>
+                    <p>Мы стремимся к популяризации города, сохранению местной истории и культурного наследия, а также к созданию активного сообщества жителей-краеведов. Этот бесплатный инструмент для самостоятельных прогулок поможет вам узнать Барановичи таким, каким его знают только местные. Присоединяйтесь к нам, исследуйте город в своём темпе и помогайте сохранять его историю для будущих поколений!</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="route" class="featured-route">
+            <div class="container">
+                <h2 class="section-title">Маршрут для первого знакомства</h2>
+                <div class="route-card">
+                    <div class="route-image" role="img" aria-label="Старый вокзал Барановичей">
+                        <img src="images/route-main.jpg" alt="Старый вокзал Барановичей - начало маршрута">
+                    </div>
+                    <div class="route-content">
+                        <h2>«Паровозная столица»</h2>
+                        <div class="route-stats">
+                            <div class="stat-item"><i class="fas fa-walking"></i> Пешком</div>
+                            <div class="stat-item"><i class="fas fa-clock"></i> 2 часа</div>
+                            <div class="stat-item"><i class="fas fa-ruler"></i> 3.5 км</div>
+                            <div class="stat-item"><i class="fas fa-map-marker-alt"></i> 8 точек</div>
+                        </div>
+                        
+                        <div class="route-rating">
+                            <span class="rating-label">Оценка маршрута:</span>
+                            <span class="stars" title="Оценка 4.8 из 5">★★★★★</span>
+                            <span class="rating-value">4.8 (124 отзыва)</span>
+                        </div>
+                        
+                        <div class="route-path">
+                            <h3>Путь следования:</h3>
+                            <ol>
+                                <li>Железнодорожный вокзал (памятник архитектуры XIX века)</li>
+                                <li>Памятник паровозу Эш-4258</li>
+                                <li>Свято-Покровский собор</li>
+                                <li>Здание бывшего реального училища</li>
+                                <li>Прогулка по улице Советской</li>
+                                <li>Парк имени Жилибока</li>
+                            </ol>
+                        </div>
+                        
+                        <p>Этот маршрут проведёт вас по местам, которые не показывают обычным туристам. Вы увидите старинную купеческую застройку, узнаете истории местных жителей, найдёте лучшие виды на город и сделаете отличные фотографии.</p>
+                        <a href="404.html" class="btn btn-primary" title="Открыть карту и описание маршрута">Открыть карту и описание →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="community" class="community-section">
+            <div class="container">
+                <h2 class="section-title">Стань автором маршрута</h2>
+                <div class="community-card">
+                    <div class="community-content">
+                        <p class="community-intro">
+                            Конструктор маршрутов уже доступен каждому! Мы верим, что лучшие знания о городе хранятся в сердцах его жителей. Добавьте свои любимые места, скрытые дворики или исторические здания на общую карту и помогите другим увидеть Барановичи вашими глазами.
+                        </p>
+                        
+                        <div class="community-features">
+                            <div class="feature-item">
+                                <i class="fas fa-map-pin"></i>
+                                <h4>Добавляйте точки</h4>
+                                <p>Отмечайте интересные локации на интерактивной карте, загружайте фотографии и пишите уникальные описания.</p>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-pencil-ruler"></i>
+                                <h4>Создавайте путь</h4>
+                                <p>Выстраивайте логичный порядок посещения, задавайте время прохождения и сложность маршрута.</p>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-users"></i>
+                                <h4>Делитесь с сообществом</h4>
+                                <p>Публикуйте свои экскурсии, получайте отзывы от прохожих и становитесь признанным краеведом.</p>
+                            </div>
+                        </div>
+
+                        <div class="community-stats">
+                            <div class="stat-box">
+                                <span class="stat-number">47</span>
+                                <span class="stat-label">авторских маршрутов</span>
+                            </div>
+                            <div class="stat-box">
+                                <span class="stat-number">23</span>
+                                <span class="stat-label">активных создателя</span>
+                            </div>
+                            <div class="stat-box">
+                                <span class="stat-number">1.2K</span>
+                                <span class="stat-label">прохождений за месяц</span>
+                            </div>
+                        </div>
+
+                        <a href="404.html" class="btn btn-accent" title="Перейти к конструктору маршрутов">
+                            <i class="fas fa-compass"></i> Создать свой маршрут
+                        </a>
+                    </div>
+                    <div class="community-image">
+                        <img src="images/community-panoram.jpg" alt="Панорама города Барановичи">
+                    </div>
+                </div>
+                <p class="community-note">Присоединяйтесь к инициативе по сохранению местной истории. Каждый ваш маршрут — это вклад в культурное наследие Барановичей.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h4>О проекте</h4>
+                    <p>«BarRouts» – бесплатный инструмент для самостоятельных прогулок по городу. Создано с любовью к родному городу местными жителями.</p>
+                </div>
+                <div class="footer-column">
+                    <h4>Навигация</h4>
+                    <ul>
+                        <li><a href="index.html" title="Главная">Главная</a></li>
+                        <li><a href="404.html" title="Маршруты">Маршруты</a></li>
+                        <li><a href="404.html" title="Конструктор">Конструктор</a></li>
+                        <li><a href="gallery.html">Галерея</a></li>
+                        <li><a href="404.html" title="О городе">О городе</a></li>
+                        <li><a href="developer.html" title="О разработчике">О разработчике</a></li>
+                        <li><a href="privacy.html" title="Политика конфиденциальности">Политика конфиденциальности</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Контакты</h4>
+                    <address>
+                        <p>г. Барановичи, ул. Ленина, д. 5</p>
+                        <p>Телефон: <a href="tel:+375291234567" title="Позвонить нам">+375 (29) 123-45-67</a></p>
+                        <p>Email: <a href="mailto:cheleyskiy@gmail.com" title="Написать нам">cheleyskiy@gmail.com</a></p>
+                        <p>Сайт колледжа: <a href="https://www.bartc.by/index.php/ru/" title="Сайт колледжа">УО "БТК"</a></p>
+                    </address>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="copyright">© 2026 BarRouts. Бесплатный путеводитель.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

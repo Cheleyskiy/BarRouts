@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Вход и Регистрация — BarRouts</title>
+
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="images/favicon.png" type="image/png">
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <nav>
+        <div class="mobile-menu-wrapper">
+          <input id="menu__toggle" type="checkbox" />
+          <label class="menu__btn" for="menu__toggle" title="Открыть мобильное меню">
+            <span></span>
+          </label>
+          <label class="menu__overlay" for="menu__toggle"></label>
+
+          <ul class="menu__box">
+            <li><a class="menu__item" href="index.html">Главная</a></li>
+            <li class="menu__has-submenu">
+              <input id="menu__routes" type="checkbox" class="menu__submenu-toggle" />
+              <label class="menu__item menu__item--parent" for="menu__routes">
+                Маршруты <i class="fas fa-chevron-down"></i>
+              </label>
+              <ul class="menu__submenu">
+                <li><a class="menu__subitem" href="route-historical.html">Исторические</a></li>
+                <li><a class="menu__subitem" href="route-gastro.html">Гастрономические</a></li>
+                <li><a class="menu__subitem" href="route-family.html">Для семей с детьми</a></li>
+              </ul>
+            </li>
+            <li><a class="menu__item" href="404.html">Конструктор</a></li>
+            <li><a class="menu__item" href="sitemap.html">Карта сайта</a></li>
+            <li><a class="menu__item" href="gallery.html">Галерея</a></li>
+            <li><a class="menu__item" href="404.html">О городе</a></li>
+            <li><a class="menu__item" href="developer.html">О разработчике</a></li>
+          </ul>
+        </div>
+
+        <a href="index.html" class="logo" title="Вернуться на главную страницу">
+          <img src="images/logo.png" alt="Логотип сайта Местные туры Барановичи">
+        </a>
+
+        <ul class="nav-links">
+          <li><a href="index.html" title="Главная страница">Главная</a></li>
+          <li class="has-submenu">
+            <a href="404.html" title="Все маршруты">Маршруты <i class="fas fa-chevron-down"></i></a>
+            <ul class="submenu">
+              <li><a href="route-historical.html">Исторические</a></li>
+              <li><a href="route-gastro.html">Гастрономические</a></li>
+              <li><a href="route-family.html">Для семей с детьми</a></li>
+            </ul>
+          </li>
+          <li><a href="404.html" title="Создать свой маршрут">Конструктор</a></li>
+          <li><a href="404.html" title="О городе Барановичи">О городе</a></li>
+        </ul>
+
+        <div class="header-actions">
+          <div class="header-search">
+            <form action="search.html" method="GET">
+              <input type="text" name="q" placeholder="Поиск..." title="Поиск маршрута">
+              <button type="submit" title="Найти"><i class="fas fa-search"></i></button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <input type="radio" name="passport-mode" id="passport-mode-login" checked>
+    <input type="radio" name="passport-mode" id="passport-mode-reg">
+
+    <div class="passport-auth">
+
+      <div class="passport-auth__controls">
+        <label class="passport-auth__tab" for="passport-mode-login">Вход</label>
+        <label class="passport-auth__tab" for="passport-mode-reg">Регистрация</label>
+      </div>
+
+      <div class="passport-auth__book">
+
+        <div class="passport-auth__page passport-auth__page--left">
+          <h2 class="passport-auth__heading">Подтверди личность</h2>
+          <p class="passport-auth__desc">Продолжи путешествовать<br>и создавать маршруты</p>
+          <div class="passport-auth__stamp">Бывалый</div>
+        </div>
+
+        <div class="passport-auth__page passport-auth__page--right">
+          <div class="passport-auth__form-title">Информация о себе</div>
+          <div class="passport-auth__form-group">
+            <label>Как вас зовут?</label>
+            <input type="text" placeholder="Иван с Арбата">
+          </div>
+          <div class="passport-auth__form-group">
+            <label>Электронная почта</label>
+            <input type="email" placeholder="your@email.com">
+          </div>
+          <div class="passport-auth__form-group">
+            <label>Пароль</label>
+            <input type="password" placeholder="Минимум 6 знаков">
+          </div>
+          <div class="passport-auth__form-group">
+            <label>Ваша роль</label>
+            <select class="passport-auth__select">
+              <option value="" disabled selected>Кто вы?</option>
+              <option value="local">Местный эксперт (создаю маршруты)</option>
+              <option value="traveler">Путешественник (ищу маршруты)</option>
+            </select>
+          </div>
+          <button class="passport-auth__btn">Получить паспорт</button>
+          <p class="passport-auth__note">Регистрируясь, вы принимаете правила городского гида</p>
+        </div>
+
+        <div class="passport-auth__flip">
+          <div class="passport-auth__flip-front">
+            <div class="passport-auth__form-title">Вход в город</div>
+            <div class="passport-auth__form-group">
+              <label>Электронная почта</label>
+              <input type="email" placeholder="your@email.com">
+            </div>
+            <div class="passport-auth__form-group">
+              <label>Пароль</label>
+              <input type="password" placeholder="••••••••">
+            </div>
+            <button class="passport-auth__btn">Войти</button>
+            <p class="passport-auth__note">Забыли пароль? Отыщите свою городскую легенду</p>
+          </div>
+          <div class="passport-auth__flip-back">
+            <h2 class="passport-auth__heading">Открой новый паспорт</h2>
+            <p class="passport-auth__desc">Начни открывать новое<br>и давать новое другим</p>
+            <div class="passport-auth__stamp">Новичок</div>
+          </div>
+        </div>
+
+        <div class="passport-auth__spine"></div>
+      </div>
+
+    </div>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-column">
+          <h4>О проекте</h4>
+          <p>«BarRouts» – бесплатный инструмент для самостоятельных прогулок по городу. Создано с любовью к родному городу местными жителями.</p>
+        </div>
+        <div class="footer-column">
+          <h4>Навигация</h4>
+          <ul>
+            <li><a href="index.html" title="Главная">Главная</a></li>
+            <li><a href="404.html" title="Маршруты">Маршруты</a></li>
+            <li><a href="404.html" title="Конструктор">Конструктор</a></li>
+            <li><a href="gallery.html">Галерея</a></li>
+            <li><a href="404.html" title="О городе">О городе</a></li>
+            <li><a href="developer.html" title="О разработчике">О разработчике</a></li>
+            <li><a href="privacy.html" title="Политика конфиденциальности">Политика конфиденциальности</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Контакты</h4>
+          <address>
+            <p>г. Барановичи, ул. Ленина, д. 5</p>
+            <p>Телефон: <a href="tel:+375291234567" title="Позвонить нам">+375 (29) 123-45-67</a></p>
+            <p>Email: <a href="mailto:cheleyskiy@gmail.com" title="Написать нам">cheleyskiy@gmail.com</a></p>
+            <p>Сайт колледжа: <a href="https://www.bartc.by/index.php/ru/" title="Сайт колледжа">УО "БТК"</a></p>
+          </address>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="copyright">© 2026 BarRouts. Бесплатный путеводитель.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

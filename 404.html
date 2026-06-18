@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>404 - BarRouts - Челей М.А.</title>
+    
+    <link rel="author" href="https://vk.com/cheleyskiy">
+    
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="page-404">
+
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo" title="Вернуться на главную страницу">
+                    <img src="images/logo.png">
+                </a>
+                
+                <ul class="nav-links">
+                    <li><a href="index.html" title="Главная страница">Главная</a></li>
+                    <li class="has-submenu">
+                        <a href="404.html" title="Все маршруты">Маршруты <i class="fas fa-chevron-down"></i></a>
+                        <ul class="submenu">
+                            <li><a href="404.html" title="Исторический маршрут">Исторические</a></li>
+                            <li><a href="404.html" title="Гастрономический маршрут">Гастрономические</a></li>
+                            <li><a href="404.html" title="Семейный маршрут">Для семей с детьми</a></li>
+                            <li><a href="404.html" title="Архитектурный маршрут">Архитектура</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="404.html" title="Создать свой маршрут">Конструктор</a></li>
+                    <li><a href="404.html" title="О городе Барановичи">О городе</a></li>
+                </ul>
+                
+                
+                <div class="lang-switch">RU / BY</div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="error-page">
+    <div class="container">
+        <div class="error-content">
+            <div class="error-code-wrapper">
+                <span class="error-digit">4</span>
+                
+                <div class="compass-wrapper">
+                    <div class="compass">
+                        <div class="needle"></div>
+                        <div class="center-dot"></div>
+                    </div>
+                </div>
+                
+                <span class="error-digit">4</span>
+            </div>
+            <h2 class="error-title">Маршрут прерван, но квест продолжается!</h2>
+            <p class="error-description">
+                Вы попали на несуществующую страницу. Но настоящие краеведы не сдаются! 
+                Найдите <strong>3 скрытые точки</strong> на старой карте ниже, чтобы получить секретный проход на главную страницу.
+            </p>
+
+            <div class="css-game-map" id="questMap">
+                <div class="map-background"></div>
+
+                <div class="map-lines">
+                    <svg id="routeSvg" viewBox="0 0 500 350" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+                    </svg>
+                </div>
+
+                <div class="map-point" data-point="1" style="top: 25%; left: 20%;" title="Точка 1">
+                    <span class="point-marker">?</span>
+                </div>
+                <div class="map-point" data-point="2" style="top: 60%; left: 50%;" title="Точка 2">
+                    <span class="point-marker">?</span>
+                </div>
+                <div class="map-point" data-point="3" style="top: 30%; left: 75%;" title="Точка 3">
+                    <span class="point-marker">?</span>
+                </div>
+
+                <div class="game-progress">
+                    Собрано точек: <span class="counter">0</span> / 3
+                </div>
+
+                <div class="game-win-overlay" id="winOverlay">
+                    <div class="win-content">
+                        <h3>🎉 Маршрут построен!</h3>
+                        <p>Вы успешно соединили все точки. Возвращайтесь к проверенным путям.</p>
+                        <a href="index.html" class="btn btn-primary" title="Вернуться на главную">Вернуться на главную</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="error-actions">
+                <a href="index.html" class="btn btn-secondary" title="Пропустить квест">Пропустить и вернуться</a>
+            </div>
+        </div>
+    </div>
+</main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h4>О проекте</h4>
+                    <p>«BarRouts» – бесплатный инструмент для самостоятельных прогулок по городу. Создано с любовью к родному городу местными жителями.</p>
+                </div>
+                <div class="footer-column">
+                    <h4>Навигация</h4>
+                    <ul>
+                        <li><a href="index.html" title="Главная">Главная</a></li>
+                        <li><a href="404.html" title="Маршруты">Маршруты</a></li>
+                        <li><a href="404.html" title="Конструктор">Конструктор</a></li>
+                        <li><a href="gallery.html">Галерея</a></li>
+                        <li><a href="404.html" title="О городе">О городе</a></li>
+                        <li><a href="privacy.html" title="Политика конфиденциальности">Политика конфиденциальности</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Контакты</h4>
+                    <address>
+                        <p>г. Барановичи, ул. Ленина, д. 5</p>
+                        <p>Телефон: <a href="tel:+375291234567" title="Позвонить нам">+375 (29) 123-45-67</a></p>
+                        <p>Email: <a href="mailto:cheleyskiy@gmail.com" title="Написать нам">cheleyskiy@gmail.com</a></p>
+                        <p>Сайт колледжа: <a href="https://www.bartc.by/index.php/ru/" title="Сайт колледжа">УО "БТК"</a></p>
+                    </address>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="copyright">© 2026 BarRouts. Бесплатный путеводитель.</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        if (!document.body.classList.contains('page-404')) return;
+
+        const points = document.querySelectorAll('.map-point');
+        const counter = document.querySelector('.game-progress .counter');
+        const winOverlay = document.getElementById('winOverlay');
+        const svg = document.getElementById('routeSvg');
+        
+        let clickOrder = [];
+
+        points.forEach(point => {
+            point.addEventListener('click', function() {
+                const pointId = this.getAttribute('data-point');
+
+                if (clickOrder.includes(pointId)) {
+                    this.classList.add('shake');
+                    setTimeout(() => this.classList.remove('shake'), 400);
+                    return;
+                }
+
+                this.classList.add('found');
+                this.querySelector('.point-marker').textContent = '✓';
+                clickOrder.push(pointId);
+
+                if (clickOrder.length >= 2) {
+                    const prevId = clickOrder[clickOrder.length - 2];
+                    const currId = clickOrder[clickOrder.length - 1];
+                    drawLine(prevId, currId);
+                }
+
+                counter.textContent = clickOrder.length;
+
+                if (clickOrder.length === 3) {
+                    setTimeout(() => {
+                        winOverlay.classList.add('visible');
+                    }, 900);
+                }
+            });
+        });
+
+        function getPointCenterInSvg(element) {
+            const rect = element.getBoundingClientRect();
+            const screenPoint = svg.createSVGPoint();
+            screenPoint.x = rect.left + rect.width / 2;
+            screenPoint.y = rect.top + rect.height / 2;
+            return screenPoint.matrixTransform(svg.getScreenCTM().inverse());
+        }
+
+        function drawLine(id1, id2) {
+            const point1 = document.querySelector(`.map-point[data-point="${id1}"]`);
+            const point2 = document.querySelector(`.map-point[data-point="${id2}"]`);
+
+            const center1 = getPointCenterInSvg(point1);
+            const center2 = getPointCenterInSvg(point2);
+            const x1 = center1.x;
+            const y1 = center1.y;
+            const x2 = center2.x;
+            const y2 = center2.y;
+
+            const line = document.createElementNS('http://www.w3.org/2000/svg', 'line');
+            line.setAttribute('x1', x1);
+            line.setAttribute('y1', y1);
+            line.setAttribute('x2', x2);
+            line.setAttribute('y2', y2);
+            line.classList.add('route-line');
+
+            svg.appendChild(line);
+
+            line.getBoundingClientRect();
+
+            requestAnimationFrame(() => {
+                line.classList.add('active');
+            });
+        }
+    });
+    </script>
+</body>
+</html>

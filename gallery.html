@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Галерея — BarRouts</title>
+
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="images/favicon.png" type="image/png">
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="gallery.css">
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <nav>
+        <div class="mobile-menu-wrapper">
+          <input id="menu__toggle" type="checkbox" />
+          <label class="menu__btn" for="menu__toggle" title="Открыть мобильное меню">
+            <span></span>
+          </label>
+          <label class="menu__overlay" for="menu__toggle"></label>
+
+          <ul class="menu__box">
+            <li><a class="menu__item" href="index.html">Главная</a></li>
+            <li class="menu__has-submenu">
+              <input id="menu__routes" type="checkbox" class="menu__submenu-toggle" />
+              <label class="menu__item menu__item--parent" for="menu__routes">
+                Маршруты <i class="fas fa-chevron-down"></i>
+              </label>
+              <ul class="menu__submenu">
+                <li><a class="menu__subitem" href="route-historical.html">Исторические</a></li>
+                <li><a class="menu__subitem" href="route-gastro.html">Гастрономические</a></li>
+                <li><a class="menu__subitem" href="route-family.html">Для семей с детьми</a></li>
+              </ul>
+            </li>
+            <li><a class="menu__item" href="404.html">Конструктор</a></li>
+            <li><a class="menu__item" href="sitemap.html">Карта сайта</a></li>
+            <li><a class="menu__item" href="gallery.html">Галерея</a></li>
+            <li><a class="menu__item" href="404.html">О городе</a></li>
+            <li><a class="menu__item" href="developer.html">О разработчике</a></li>
+
+          </ul>
+        </div>
+
+        <a href="index.html" class="logo" title="Вернуться на главную страницу">
+          <img src="images/logo.png" alt="Логотип сайта Местные туры Барановичи">
+        </a>
+
+        <ul class="nav-links">
+          <li><a href="index.html" title="Главная страница">Главная</a></li>
+          <li class="has-submenu">
+            <a href="404.html" title="Все маршруты">Маршруты <i class="fas fa-chevron-down"></i></a>
+            <ul class="submenu">
+              <li><a href="route-historical.html">Исторические</a></li>
+              <li><a href="route-gastro.html">Гастрономические</a></li>
+              <li><a href="route-family.html">Для семей с детьми</a></li>
+            </ul>
+          </li>
+          <li><a href="404.html" title="Создать свой маршрут">Конструктор</a></li>
+          <li><a href="404.html" title="О городе Барановичи">О городе</a></li>
+          <li><a href="register.html" title="Вход в аккаунт">Войти</a></li>
+        </ul>
+
+        <div class="header-actions">
+          <div class="header-search">
+            <form action="search.html" method="GET">
+              <input type="text" name="q" placeholder="Поиск..." title="Поиск маршрута">
+              <button type="submit" title="Найти"><i class="fas fa-search"></i></button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="gallery-hero">
+      <div class="container">
+        <h1 class="section-title">Галерея города</h1>
+        <p class="gallery-hero__sub">Барановичи глазами местных — архитектура, улицы и живые моменты города</p>
+      </div>
+    </section>
+
+    <section class="gallery-section">
+      <div class="container">
+
+        <div class="slider">
+
+          <div class="slide" id="slide1">
+            <a href="gallery.html#slide6" class="slide__arrow slide__arrow--prev" title="Предыдущее фото">&#10094;</a>
+            <a href="gallery.html#slide2" class="slide__arrow slide__arrow--next" title="Следующее фото">&#10095;</a>
+
+            <a href="#lb1" class="slide__img-link">
+              <img
+                src="images/gallery/gallery-1.jpg"
+                alt="Железнодорожный вокзал Барановичей"
+                class="slide__img"
+              >
+              <span class="slide__zoom"><i class="fas fa-expand"></i></span>
+            </a>
+            <div class="slide__caption">
+              <span class="slide__num">01 / 06</span>
+              <p>Железнодорожный вокзал — символ города и его главная архитектурная доминанта</p>
+            </div>
+          </div>
+
+          <div class="slide" id="slide2">
+            <a href="gallery.html#slide1" class="slide__arrow slide__arrow--prev" title="Предыдущее фото">&#10094;</a>
+            <a href="gallery.html#slide3" class="slide__arrow slide__arrow--next" title="Следующее фото">&#10095;</a>
+
+            <a href="#lb2" class="slide__img-link">
+              <img
+                src="images/gallery/gallery-2.jpg"
+                alt="Свято-Покровский собор"
+                class="slide__img"
+              >
+              <span class="slide__zoom"><i class="fas fa-expand"></i></span>
+            </a>
+            <div class="slide__caption">
+              <span class="slide__num">02 / 06</span>
+              <p>Свято-Покровский собор — духовный центр и украшение исторической части города</p>
+            </div>
+          </div>
+
+          <div class="slide" id="slide3">
+            <a href="gallery.html#slide2" class="slide__arrow slide__arrow--prev" title="Предыдущее фото">&#10094;</a>
+            <a href="gallery.html#slide4" class="slide__arrow slide__arrow--next" title="Следующее фото">&#10095;</a>
+
+            <a href="#lb3" class="slide__img-link">
+              <img
+                src="images/gallery/gallery-3.webp"
+                alt="Паровоз-памятник"
+                class="slide__img"
+              >
+              <span class="slide__zoom"><i class="fas fa-expand"></i></span>
+            </a>
+            <div class="slide__caption">
+              <span class="slide__num">03 / 06</span>
+              <p>Паровоз-памятник — дань уважения железнодорожной истории «паровозной столицы»</p>
+            </div>
+          </div>
+
+          <div class="slide" id="slide4">
+            <a href="gallery.html#slide3" class="slide__arrow slide__arrow--prev" title="Предыдущее фото">&#10094;</a>
+            <a href="gallery.html#slide5" class="slide__arrow slide__arrow--next" title="Следующее фото">&#10095;</a>
+
+            <a href="#lb4" class="slide__img-link">
+              <img
+                src="images/gallery/gallery-4.png"
+                alt="Улица Советская"
+                class="slide__img"
+              >
+              <span class="slide__zoom"><i class="fas fa-expand"></i></span>
+            </a>
+            <div class="slide__caption">
+              <span class="slide__num">04 / 06</span>
+              <p>Улица Советская — прогулочный бульвар с купеческой застройкой начала XX века</p>
+            </div>
+          </div>
+
+          <div class="slide" id="slide5">
+            <a href="gallery.html#slide4" class="slide__arrow slide__arrow--prev" title="Предыдущее фото">&#10094;</a>
+            <a href="gallery.html#slide6" class="slide__arrow slide__arrow--next" title="Следующее фото">&#10095;</a>
+
+            <a href="#lb5" class="slide__img-link">
+              <img
+                src="images/gallery/gallery-5.jpg"
+                alt="Парк Вдохновленные Победой"
+                class="slide__img"
+              >
+              <span class="slide__zoom"><i class="fas fa-expand"></i></span>
+            </a>
+            <div class="slide__caption">
+              <span class="slide__num">05 / 06</span>
+              <p>Парк имени Жилибока — любимое место отдыха горожан в любое время года</p>
+            </div>
+          </div>
+
+          <div class="slide" id="slide6">
+            <a href="gallery.html#slide5" class="slide__arrow slide__arrow--prev" title="Предыдущее фото">&#10094;</a>
+            <a href="gallery.html#slide1" class="slide__arrow slide__arrow--next" title="Следующее фото">&#10095;</a>
+
+            <a href="#lb6" class="slide__img-link">
+              <img
+                src="images/gallery/gallery-6.jpg"
+                alt="Сборище"
+                class="slide__img"
+              >
+              <span class="slide__zoom"><i class="fas fa-expand"></i></span>
+            </a>
+            <div class="slide__caption">
+              <span class="slide__num">06 / 06</span>
+              <p>Автор сайта и еще 2</p>
+            </div>
+          </div>
+
+          <div class="slider__dots">
+            <a href="gallery.html#slide1" class="slider__dot" title="Фото 1"></a>
+            <a href="gallery.html#slide2" class="slider__dot" title="Фото 2"></a>
+            <a href="gallery.html#slide3" class="slider__dot" title="Фото 3"></a>
+            <a href="gallery.html#slide4" class="slider__dot" title="Фото 4"></a>
+            <a href="gallery.html#slide5" class="slider__dot" title="Фото 5"></a>
+            <a href="gallery.html#slide6" class="slider__dot" title="Фото 6"></a>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section class="gallery-grid-section">
+      <div class="container">
+        <h2 class="section-title">Все фотографии</h2>
+        <div class="gallery-grid">
+
+          <a href="#lb1" class="gallery-grid__item" title="Открыть фото: Железнодорожный вокзал">
+            <img src="images/gallery/gallery-1.jpg" alt="Железнодорожный вокзал Барановичей">
+            <div class="gallery-grid__overlay">
+              <i class="fas fa-expand-alt"></i>
+              <span>Железнодорожный вокзал</span>
+            </div>
+          </a>
+
+          <a href="#lb2" class="gallery-grid__item" title="Открыть фото: Свято-Покровский собор">
+            <img src="images/gallery/gallery-2.jpg" alt="Свято-Покровский собор">
+            <div class="gallery-grid__overlay">
+              <i class="fas fa-expand-alt"></i>
+              <span>Свято-Покровский собор</span>
+            </div>
+          </a>
+
+          <a href="#lb3" class="gallery-grid__item" title="Открыть фото: Паровоз-памятник">
+            <img src="images/gallery/gallery-3.webp" alt="Паровоз-памятник">
+            <div class="gallery-grid__overlay">
+              <i class="fas fa-expand-alt"></i>
+              <span>Паровоз-памятник</span>
+            </div>
+          </a>
+
+          <a href="#lb4" class="gallery-grid__item" title="Открыть фото: Улица Советская">
+            <img src="images/gallery/gallery-4.png" alt="Улица Советская">
+            <div class="gallery-grid__overlay">
+              <i class="fas fa-expand-alt"></i>
+              <span>Улица Советская</span>
+            </div>
+          </a>
+
+          <a href="#lb5" class="gallery-grid__item" title="Открыть фото: Парк Вдохновленные победой">
+            <img src="images/gallery/gallery-5.jpg" alt="Парк Вдохновленные победой">
+            <div class="gallery-grid__overlay">
+              <i class="fas fa-expand-alt"></i>
+              <span>Парк Вдохновленные Победой</span>
+            </div>
+          </a>
+
+          <a href="#lb6" class="gallery-grid__item" title="Открыть фото: Сборище">
+            <img src="images/gallery/gallery-6.jpg" alt="Сборище">
+            <div class="gallery-grid__overlay">
+              <i class="fas fa-expand-alt"></i>
+              <span>Сборище</span>
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <div class="lightbox" id="lb1" role="dialog" aria-label="Железнодорожный вокзал Барановичей">
+      <a href="gallery.html" class="lightbox__backdrop" title="Закрыть"></a>
+      <div class="lightbox__content">
+        <a href="gallery.html" class="lightbox__close" title="Закрыть">&times;</a>
+        <a href="#lb6" class="lightbox__nav lightbox__nav--prev" title="Предыдущее фото">&#10094;</a>
+        <img src="images/gallery/gallery-1.jpg" alt="Железнодорожный вокзал Барановичей" class="lightbox__img">
+        <a href="#lb2" class="lightbox__nav lightbox__nav--next" title="Следующее фото">&#10095;</a>
+        <p class="lightbox__caption">Железнодорожный вокзал — символ города и его главная архитектурная доминанта</p>
+      </div>
+    </div>
+
+    <div class="lightbox" id="lb2" role="dialog" aria-label="Свято-Покровский собор">
+      <a href="gallery.html" class="lightbox__backdrop" title="Закрыть"></a>
+      <div class="lightbox__content">
+        <a href="gallery.html" class="lightbox__close" title="Закрыть">&times;</a>
+        <a href="#lb1" class="lightbox__nav lightbox__nav--prev" title="Предыдущее фото">&#10094;</a>
+        <img src="images/gallery/gallery-2.jpg" alt="Свято-Покровский собор" class="lightbox__img">
+        <a href="#lb3" class="lightbox__nav lightbox__nav--next" title="Следующее фото">&#10095;</a>
+        <p class="lightbox__caption">Свято-Покровский собор — духовный центр и украшение исторической части города</p>
+      </div>
+    </div>
+
+    <div class="lightbox" id="lb3" role="dialog" aria-label="Паровоз-памятник">
+      <a href="gallery.html" class="lightbox__backdrop" title="Закрыть"></a>
+      <div class="lightbox__content">
+        <a href="gallery.html" class="lightbox__close" title="Закрыть">&times;</a>
+        <a href="#lb2" class="lightbox__nav lightbox__nav--prev" title="Предыдущее фото">&#10094;</a>
+        <img src="images/gallery/gallery-3.webp" alt="Паровоз-памятник" class="lightbox__img">
+        <a href="#lb4" class="lightbox__nav lightbox__nav--next" title="Следующее фото">&#10095;</a>
+        <p class="lightbox__caption">Паровоз-памятник — дань уважения железнодорожной истории «паровозной столицы»</p>
+      </div>
+    </div>
+
+    <div class="lightbox" id="lb4" role="dialog" aria-label="Улица Советская">
+      <a href="gallery.html" class="lightbox__backdrop" title="Закрыть"></a>
+      <div class="lightbox__content">
+        <a href="gallery.html" class="lightbox__close" title="Закрыть">&times;</a>
+        <a href="#lb3" class="lightbox__nav lightbox__nav--prev" title="Предыдущее фото">&#10094;</a>
+        <img src="images/gallery/gallery-4.png" alt="Улица Советская" class="lightbox__img">
+        <a href="#lb5" class="lightbox__nav lightbox__nav--next" title="Следующее фото">&#10095;</a>
+        <p class="lightbox__caption">Улица Советская — прогулочный бульвар с купеческой застройкой начала XX века</p>
+      </div>
+    </div>
+
+    <div class="lightbox" id="lb5" role="dialog" aria-label="Парк Вдохновленные Победой">
+      <a href="gallery.html" class="lightbox__backdrop" title="Закрыть"></a>
+      <div class="lightbox__content">
+        <a href="gallery.html" class="lightbox__close" title="Закрыть">&times;</a>
+        <a href="#lb4" class="lightbox__nav lightbox__nav--prev" title="Предыдущее фото">&#10094;</a>
+        <img src="images/gallery/gallery-5.jpg" alt="Парк Вдохновленные Победой" class="lightbox__img">
+        <a href="#lb6" class="lightbox__nav lightbox__nav--next" title="Следующее фото">&#10095;</a>
+        <p class="lightbox__caption">Парк Вдохновленные Победой — любимое место отдыха горожан в любое время года</p>
+      </div>
+    </div>
+
+    <div class="lightbox" id="lb6" role="dialog" aria-label="Сборище">
+      <a href="gallery.html" class="lightbox__backdrop" title="Закрыть"></a>
+      <div class="lightbox__content">
+        <a href="gallery.html" class="lightbox__close" title="Закрыть">&times;</a>
+        <a href="#lb5" class="lightbox__nav lightbox__nav--prev" title="Предыдущее фото">&#10094;</a>
+        <img src="images/gallery/gallery-6.jpg" alt="Сборище" class="lightbox__img">
+        <a href="#lb1" class="lightbox__nav lightbox__nav--next" title="Следующее фото">&#10095;</a>
+        <p class="lightbox__caption">Сборище одаренных</p>
+      </div>
+    </div>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-column">
+          <h4>О проекте</h4>
+          <p>«BarRouts» – бесплатный инструмент для самостоятельных прогулок по городу. Создано с любовью к родному городу местными жителями.</p>
+        </div>
+        <div class="footer-column">
+          <h4>Навигация</h4>
+          <ul>
+            <li><a href="index.html" title="Главная">Главная</a></li>
+            <li><a href="404.html" title="Маршруты">Маршруты</a></li>
+            <li><a href="404.html" title="Конструктор">Конструктор</a></li>
+            <li><a href="gallery.html">Галерея</a></li>
+            <li><a href="404.html" title="О городе">О городе</a></li>
+            <li><a href="developer.html" title="О разработчике">О разработчике</a></li>
+            <li><a href="privacy.html" title="Политика конфиденциальности">Политика конфиденциальности</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Контакты</h4>
+          <address>
+            <p>г. Барановичи, ул. Ленина, д. 5</p>
+            <p>Телефон: <a href="tel:+375291234567" title="Позвонить нам">+375 (29) 123-45-67</a></p>
+            <p>Email: <a href="mailto:cheleyskiy@gmail.com" title="Написать нам">cheleyskiy@gmail.com</a></p>
+            <p>Сайт колледжа: <a href="https://www.bartc.by/index.php/ru/" title="Сайт колледжа">УО "БТК"</a></p>
+          </address>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="copyright">© 2026 BarRouts. Бесплатный путеводитель.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
